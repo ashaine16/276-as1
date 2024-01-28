@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizApp.css">
+    <title>Interactive Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1>Canadian Heritage Quiz</h1>
+        </header>
+        <section class="question-section">
+            <div class="question">Question text goes here...</div>
+            <div class="options"></div>
+        </section>
+        <footer class="quiz-footer">
+            <button id="previous-btn">Previous</button>
+            <button id="next-btn">Next</button>
+            <button id="submit-btn">Submit</button>
+        </footer>
+        <div class="results">
+            <h3>Your Score: <span id="score">0</span> <span id="total-questions"></span></h3>
+            <div id="detailed-results">
+                <h4>Detailed Results:</h4>
+                <div id="correct-answers"></div>
+            </div>
+        </div>
+    </div>
+    <script src="quizLogic.js"></script>
+</body>
+</html>
